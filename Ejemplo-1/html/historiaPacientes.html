@@ -30,10 +30,8 @@
 
             </div>
             <div class="col-lg-2">
-                <button type="button" class="btn btn-primary">Registrar historia</button>
+                <button type="button" class="btn btn-primary" name="RegHistoria">Registrar historia</button>
             </div>
-
-
         </div>
 
     </div>
@@ -42,52 +40,51 @@
 
         <form action="" method="POST">
             <div class="col">
-                
+
 
             </div>
             <div class="row">
                 <div class="col">
-                    <label class="form-label">Nombre Medico</label>
-                    <input type="" class="form-control" id="nombre_med" name=""
-                        placeholder="Nombre del medico que atiende" aria-describedby="emailHelp">
-
+                    <label class="form-label">Fecha de atencion</label>
+                    <input type="date" class="form-control" id="nombre_pac" name="FechaIngreso"
+                        placeholder="Fecha de atencion" value="2021-10-24" min="2021-01-01" max="2025-12-31">
                 </div>
                 <div class="col">
                     <label class="form-label">Nombre Paciente</label>
-                    <input type="" class="form-control" id="nombre_pac" name=""
+                    <input type="" class="form-control" id="nombre_pac" name="nom_usr"
                         placeholder="Ingrese el nombre del paciente" aria-describedby="emailHelp">
+                </div>
+                <div class="col">
+                    <label class="form-label">Numero documento paciente</label>
+                    <input type="" class="form-control" id="nombre_pac" name="cc_usr"
+                        placeholder="Ingrese numero documento paciente" aria-describedby="emailHelp">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <label class="form-label">Numero documento paciente</label>
-                    <input type="" class="form-control" id="nombre_pac" name=""
-                        placeholder="Ingrese numero documento paciente" aria-describedby="emailHelp">
+                    <label class="form-label">Id Medico</label>
+                    <input type="" class="form-control" id="nombre_pac" name="medic_id"
+                        placeholder="ID del medico" aria-describedby="emailHelp" value=""disabled>
                 </div>
                 <div class="col">
-                    <label class="form-label">Fecha de atencion</label>
-                    <input type="date" class="form-control" id="nombre_pac" name="" placeholder="Fecha de atencion"
-                    value="2021-10-24"
-                    min="2021-01-01" max="2025-12-31" >
-                </div>
-                <div class="col">
-                    <label class="form-label">.....</label>
-                    <input type="" class="form-control" id="nombre_pac" name=""
-                        placeholder="Ingrese el nombre del paciente" aria-describedby="emailHelp">
-                </div>
-                <div class="container">
-                    <label class="form-label">Descripcion</label>
-                    <input type="" class="form-control" id="nombre_pac" name=""
-                        placeholder="Ingrese descripcion de la atencion" aria-describedby="emailHelp">
-                        <div id="btnSalir">
-                            <br>
-                            <a  class="btn btn-primary"  href="../index.html" role="button">Salir</a>
-                        </br>
-                        </div>
-                        
+                    <label class="form-label">Nombre Medico</label>
+                    <input type="" class="form-control" id="nombre_med" name="nom_medico"
+                        placeholder="Nombre del medico que atiende" aria-describedby="emailHelp">
                 </div>
 
-               
+                <div class="container">
+                    <label class="form-label">Descripcion</label>
+                    <input type="" class="form-control" id="nombre_pac" name="texto"
+                        placeholder="Ingrese descripcion de la atencion" aria-describedby="emailHelp">
+                    <div id="btnSalir">
+                        <br>
+                        <a class="btn btn-primary" href="../index.html" role="button">Salir</a>
+                        </br>
+                    </div>
+
+                </div>
+
+
             </div>
         </form>
 
