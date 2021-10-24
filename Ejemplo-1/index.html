@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciudadanos Sanos</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./bootstrap/css/estilos.css">
 </head>
+
 <body>
-    <div id= "otro" class="container bg-info">
-      
-        <img src="./imgs/logo.png" alt="" style="max-width:100%;height:auto;">
-        <h1>Ciudadano Sano</h1>
+
+    <div id="otro" class="container bg-info">
+        <div class="row">
+            <div class="col-lg-4" id="log">
+                <img src="./imgs/logo.png" alt=" " style="max-width:80%;height:auto;">
+
+
+        </div>
     </div>
-    
+
 
     <div class="container">
-        <button id="cargarP1" class="btn btn-success">Registrar Paciente</button>
-        <button id="cargarP2" class="btn btn-primary">Registrar Historia</button>
+        <button id="cargarRP" class="btn btn-success">Registrar Paciente</button>
+        <a class="btn btn-primary" href="./html/historiaPacientes.html" role="button">Registrar Historia</a>
         <button id="cargarP3" class="btn btn-danger">Cargar Tablas Consultas</button>
-        <div id="contenido" class="bg-warning my-2">
+        <div id="contenido">
             <!--Carga de contenido-->
         </div>
     </div>
@@ -36,4 +39,5 @@
         $(document).ready(operaciones);
     </script>
 </body>
+
 </html>
