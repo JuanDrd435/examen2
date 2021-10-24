@@ -1,7 +1,7 @@
 
 function operaciones(){
   
-    $("#cargarP1").click(function(){
+    $("#cargarRP").click(function(){
         $("#contenido").load("html/regPacientes.html");
     })
 
