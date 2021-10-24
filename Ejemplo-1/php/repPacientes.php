@@ -74,11 +74,10 @@
 				<table id="tabla" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 					<thead>
 						<tr>
-							<th>Código</th>
 							<th>Fecha</th>
-							<th>Nombre del medico</th>
 							<th>Nombre del paciente</th>
 							<th>cedula paciente</th>
+							<th>Nombre del medico</th>
 							
 							
 						</tr>
@@ -86,7 +85,6 @@
 					<tbody>
 						<?php foreach ($listado as $fila) { ?>
 							<tr>
-								<td><?php echo $fila['id_post'] ?> </td>
 								<td><?php echo utf8_encode($fila['FechaIngreso']) ?> </td>
 								<td><?php echo utf8_encode($fila['nom_usr']) ?> </td>
 								<td><?php echo utf8_encode($fila['cc_usr']) ?> </td>
