@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Listado de Comunas</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+	
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid py-5">
+		<h1 class="display-5 fw-bold">Comunas</h1>
+	</div>
+	<div id="app" class="container">
+		<div class="card">
+			<div class="card-header bg-primary">
+				Listado 
+			</div>
+			<div class="card-body">
+				<table id="tabla" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th>Código</th>
+							<th>Comuna</th>
+							<th>Municipio</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr v-for="comuna in listado">
+							<td>{{ comuna.comu_codi }}</td>
+							<td>{{ comuna.comu_nomb }}</td>
+							<td>{{ comuna.muni_nomb }}</td>												
+							<td>
+								<button class="btn btn-success btn-sm" v-on:click="editarComuna(comuna.comu_codi)">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+								</button>
+								<button class="btn btn-danger btn-sm" v-on:click="borrarComuna(comuna.comu_codi)">
+									<i class="fa fa-trash" aria-hidden="true"></i>
+								</button>
+							</td>
+						</tr>						
+					</tbody>
+				</table>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("#tabla").DataTable();
+		});
+	</script>
+    <script>
+        new Vue({
+            el: '#app',
+            data () {
+                return {
+                listado: null
+                }
+            },
+            mounted () {
+                axios
+                .get('https://localhost/piv/EjemploConexion/Ejemplo/listadoComunajson.php')
+                .then(response => (this.listado = response.data))
+            },
+			methods: {
+				editarComuna: function(id){
+					console.log("Voy a editar : " + id);
+				},
+
+				borrarComuna: function (id) {
+					console.log("Voy a borrar : " + id);
+				}
+			},
+            })
+    </script>
+</body>
+
+</html>
