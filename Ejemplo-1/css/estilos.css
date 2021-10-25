@@ -17,10 +17,9 @@
 
 .titiloc{
     
-    height: 150px;
+    height: 200px;
     /*IMPORTANTE*/
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
