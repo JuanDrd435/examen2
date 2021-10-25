@@ -67,7 +67,7 @@
 	</div>
 	<div class="container">
 		<div class="card">
-			<div class="card-header bg-primary">
+			<div class="card-header bg-info">
 				Listado 
 			</div>
 			<div class="card-body">

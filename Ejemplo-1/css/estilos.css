@@ -15,6 +15,26 @@
     margin: auto;
 }
 
-#texto{
-    text-align:center ;
+.titiloc{
+    
+    height: 150px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnRegPac{
+
+    color: #0d6efd;
+    background: transparent;
+    border: 2px solid #0d6efd;
+    border-radius: 6px;
+}
+#btnRegistrar{
+
+    color: #0d6efd;
+    background: transparent;
+    border: 2px solid #0d6efd;
+    border-radius: 6px;
 }

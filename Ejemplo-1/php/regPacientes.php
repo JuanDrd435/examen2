@@ -12,7 +12,7 @@
 <body>
 
 
- <div id="titulo" class="container">
+ <div id="titulo" class="p-3 mb-2 bg-primary text-white">
     <h1>Registrar paciente</h1>
  </div>
 
@@ -30,7 +30,7 @@
         </div>
     
         <button type="submit" class="btn btn-primary" id="btnRegistrar"  name="registrar">Registrar</button>
-		<a  class="btn btn-danger"  href="../index.html" role="button">Salir</a>
+		<a  class="btn btn-secondary"  href="../index.html" role="button">Salir</a>
     </form>
 
  </div>

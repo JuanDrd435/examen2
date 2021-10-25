@@ -44,14 +44,16 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-2" id="log">
+            <div class="col-lg-4" id="log">
                 <img src="../imgs/logo.png" alt="" style="max-width:100%;height:auto;">
 
             </div>
             <div class="col-lg-8" id="texto">
+                <div class="titiloc" >
                 <h3>Atención Medica Pacientes</h3>
-                <p>En esta sección se realiza el registro de la atención a su paciente</p>
-
+               
+                </div>
+               
             </div>
         </div>
 
@@ -99,11 +101,11 @@
                         placeholder="Ingrese descripcion de la atencion" aria-describedby="emailHelp">
                        
                         <div id="btnSalir">
-                        <div>
-                <button type="submit" class="btn btn-primary" name="RegHistoria">Registrar historia</button>
-            </div>
+                        <div> <br>
+                         <button type="submit" class="btn btn-primary" name="RegHistoria">Registrar historia</button>
+                         </br></div>
                         <br>
-                        <a class="btn btn-danger" href="../index.html" role="button">Salir</a>
+                        <a class="btn btn-secondary" href="../index.html" role="button">Salir</a>
                         </br>
                     </div>
 
