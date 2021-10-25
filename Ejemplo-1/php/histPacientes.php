@@ -97,17 +97,19 @@
                     <label class="form-label">Descripcion</label>
                     <input type="" class="form-control" id="nombre_pac" name="texto"
                         placeholder="Ingrese descripcion de la atencion" aria-describedby="emailHelp">
-                    <div id="btnSalir">
+                       
+                        <div id="btnSalir">
+                        <div>
+                <button type="submit" class="btn btn-primary" name="RegHistoria">Registrar historia</button>
+            </div>
                         <br>
-                        <a class="btn btn-primary" href="../index.html" role="button">Salir</a>
+                        <a class="btn btn-danger" href="../index.html" role="button">Salir</a>
                         </br>
                     </div>
 
                 </div>
 
-                <div>
-                <button type="submit" class="btn btn-primary" name="RegHistoria">Registrar historia</button>
-            </div>
+                
             </div>
         </form>
 
